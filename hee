@@ -1,0 +1,27 @@
+local Allowed = loadstring(game:HttpGet("https://pastebin.com/raw/PgUU7JX5", true))()
+if Allowed[game.Players.LocalPlayer.UserId] then
+print("You are whitelist")
+else
+print("You are not whitelist")
+end
+getgenv().Settings = {
+['Name'] = 'Dragon X Hub',
+['Intro'] = true,
+['Keybind'] = 'T'
+}
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/kickTh/New-Ui/main/Shadow%20Lib%20v2.txt", true))()
+
+
+local Tab1 = Library:CreateTab('Main')
+
+Tab1:Label('Label')
+Tab1:Button('Keyborad', function()loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+ 
+end)
+Tab1:Label('Label')
+Tab1:Button('mink v4', function()loadstring(game:HttpGet("https://raw.githubusercontent.com/chirin111/MinkV4/main/README.md"))();
+end)
+Tab1:Toggle('Fast attack', false, function(vu)
+_G.Toggle = loadstring(game:HttpGet("https://pastebin.com/raw/1ssrkVwW"))();
+end)
